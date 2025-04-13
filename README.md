@@ -39,6 +39,11 @@
 - `data`：3D 高光谱图像数据，形状为 `(H, W, C)`
 - `gt`（可选）：二维 ground truth mask，形状为 `(H, W)`，值为 0/1，表示异常位置
 
+## 🌐 数据来源参考
+-本项目使用的高光谱数据集来自以下公开研究资源：
+--Xudong Kang 高光谱数据集主页[https://sites.google.com/view/xudongkang/homepage]
+你也可以使用自己收集的 .mat 格式高光谱图像，只需保证其键包含 data（必需）和 gt（可选）即可。
+
 ## 🚀 快速开始
 
 ### 1. 安装依赖
@@ -54,11 +59,8 @@ python run.py
 ```
 
 ### 3. 查看结果
-
-- `results/figures/` 中为每个样本对应的检测结果图；
+- `results/figures/` 中为每个样本对应的检测结果图以及对比图；
 - `results/metrics.csv` 中为各个检测器在每张图上的评价指标（AUC、Precision、Recall、F1、OA）；
-- `results/exp.yaml` 为 YAML 格式的运行摘要。
-
 ## 📊 输出示例（CSV）
 
 | filename     | detector | AUC   | Precision | Recall | F1    | OA    |
@@ -74,11 +76,8 @@ python run.py
 - 支持对整个数据集批量运行、保存可视化与指标。
 
 ## 🧑‍💻 贡献者
-
 - 开发者：@lijin6
 - 日期：2025年
-
 ---
-
 欢迎大家反馈建议或提 PR 优化算法框架～
 ```
