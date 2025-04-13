@@ -82,7 +82,3 @@ python run.py
 
 欢迎大家反馈建议或提 PR 优化算法框架～
 ```
-
----
-
-需要我根据你的项目实际依赖生成 `requirements.txt` 或生成一个 GitHub 用的项目简介（如 `.gitignore`, `setup.py`），我也可以帮你补上！
